@@ -1,0 +1,14 @@
+{
+  "build": "public",
+  "default": "dev",
+  "targets": {
+    "dev": {
+      "publicPath" : "", 
+      "assetModuleFilename" : ""
+    }, 
+    "prod": {
+      "publicPath" : "/demo/nrg-assessment/public", 
+      "assetModuleFilename" : "./demo/nrg-assessment/public"
+    }
+  }
+}
