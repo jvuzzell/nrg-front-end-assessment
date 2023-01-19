@@ -23,12 +23,12 @@ a  {
     color: var(--swatch_gun-powder)
 } 
 
-h1:not([class*='font-size']), .display-heading { font: 4.2rem/4.6rem 'Roboto', sans-serif; }
-h2:not([class*='font-size']), .x-lg-heading    { font: 3.4rem/3.8rem 'Roboto', sans-serif; }
-h3:not([class*='font-size']), .lg-heading      { font: 2.8rem/2.8rem 'Roboto', sans-serif; }
-h4:not([class*='font-size']), .md-heading      { font: 2.0rem/2.8rem 'Roboto', sans-serif; }
-h5:not([class*='font-size']), .sm-heading      { font: 1.9rem/2.6rem 'Roboto', sans-serif; }
-h6:not([class*='font-size']), .caption         { font: 1.7rem/2.6rem 'Roboto', sans-serif; }
+h1:not([class*='heading']), .display-heading { font: 4.2rem/4.6rem 'Roboto', sans-serif; }
+h2:not([class*='heading']), .x-lg-heading    { font: 3.4rem/3.8rem 'Roboto', sans-serif; }
+h3:not([class*='heading']), .lg-heading      { font: 2.8rem/2.8rem 'Roboto', sans-serif; }
+h4:not([class*='heading']), .md-heading      { font: 2.0rem/2.8rem 'Roboto', sans-serif; }
+h5:not([class*='heading']), .sm-heading      { font: 1.9rem/2.6rem 'Roboto', sans-serif; }
+h6:not([class*='heading']), .caption         { font: 1.7rem/2.6rem 'Roboto', sans-serif; }
 
 @media(min-width: 960px) { 
 
@@ -50,10 +50,10 @@ h6:not([class*='font-size']), .caption         { font: 1.7rem/2.6rem 'Roboto', s
         font: 1.8rem/2.8rem 'Roboto', sans-serif; 
     } 
 
-    h1:not([class*='font-size']), .display-heading { font: 4.2rem/5.2rem 'Roboto', sans-serif; font-weight: 500; }
-    h2:not([class*='font-size']), .x-lg-heading    { font: 3.6rem/4.0rem 'Roboto', sans-serif; }
-    h3:not([class*='font-size']), .lg-heading      { font: 3.2rem/3.2rem 'Roboto', sans-serif; }
-    h4:not([class*='font-size']), .md-heading      { font: 2.2rem/2.8rem 'Roboto', sans-serif; } 
+    h1:not([class*='heading']), .display-heading { font: 4.2rem/5.2rem 'Roboto', sans-serif; font-weight: 500; }
+    h2:not([class*='heading']), .x-lg-heading    { font: 3.6rem/4.0rem 'Roboto', sans-serif; }
+    h3:not([class*='heading']), .lg-heading      { font: 3.2rem/3.2rem 'Roboto', sans-serif; }
+    h4:not([class*='heading']), .md-heading      { font: 2.2rem/2.8rem 'Roboto', sans-serif; } 
 
 }
  
@@ -117,4 +117,4 @@ a, .underline { text-decoration: underline !important; }
  
 pre { padding: 20px; } 
 
-.no-wrap { white-space: nowrap; }
+.no-wrap { white-space: nowrap; } 
