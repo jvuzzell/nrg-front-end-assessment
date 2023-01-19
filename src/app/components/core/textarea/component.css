@@ -8,7 +8,7 @@
 }
 
 @media(min-width: 640px) {
-    .textarea {
+    .textarea.vertical-align {
         max-width: 45%;
     } 
 } 

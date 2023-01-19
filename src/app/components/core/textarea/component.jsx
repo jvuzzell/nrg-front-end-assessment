@@ -4,7 +4,7 @@ const Headline = (props) => {
 
     let buttons = []; 
     let containerClassList = 'textarea '; 
-    let headerClassList = 'display-heading light-weight ';
+    let headerClassList = '';
 
     props.content.buttons.map((button, index) => { 
         buttons.push(<a 
