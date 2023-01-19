@@ -1,0 +1,17 @@
+/* Background Color */
+
+.background-color_cloud { background-color: var(--swatch_cloud); }
+.background-color_bright-orange { background-color: var(--swatch_bright-orange); color: #fff; }  
+.background-color_deep-sea { background-color: var(--swatch_deep-sea); color: #fff; }
+.background-color_ash { background-color: var(--swatch_ash); }  
+.background-color_gun-powder { background-color: var(--swatch_gun-powder); color: #fff;}
+
+/* Color */
+
+.color_deep-sea { color: var(--swatch_deep-sea); }
+.color_gun-powder { color: var(--swatch_gun-powder); } 
+.color_white { color: #fff; } 
+
+.border-color_bright-orange { border: 1px solid var(--swatch_bright-orange); }
+.border-color_deep-sea { border: 1px solid var(--swatch_deep-sea); }
+.border-color_gun-powder { border: 1px solid var(--swatch_gun-powder); } 

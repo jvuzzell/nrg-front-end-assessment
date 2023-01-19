@@ -1,0 +1,263 @@
+/* Rows */
+
+div.h-row {
+    display: block;
+    position: relative;
+    font-size: 0;
+}
+
+@media (max-width: 639.98px) {
+
+    .h-row {
+        margin-left: var(--h-row-padding_max-639);
+        margin-right: var(--h-row-padding_max-639);
+    }
+
+}
+
+/* Add a breakpoint between 1280px and 1599px */
+
+@media (min-width: 640px) and (max-width: 959.98px) {
+
+    .h-row {
+        margin-left: var(--h-row-padding_min-640);
+        margin-right: var(--h-row-padding_min-640);
+    }
+
+}
+
+@media (min-width: 960px) {
+
+    .h-row {
+        margin-left: var(--h-row-padding_min-960);
+        margin-right: var(--h-row-padding_min-960);
+    }
+
+}
+
+/* Columns */
+
+.v-col {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+
+.v-col .align-right {
+    float: right;
+}
+
+.v-col .align-bottom {
+    vertical-align: bottom;
+}
+
+.v-col > .v-col {
+    margin-bottom: 0;
+}
+
+@media (max-width: 639.98px) {
+
+    .v-col {
+        padding-left: var(--v-col-margin-btm_max-639);
+        padding-right: var(--v-col-margin-btm_max-639);
+    }
+
+    .v-col:not([class*="mg-bottom"]) {
+        margin-bottom: var(--v-col-margin-btm_max-639);
+    }
+
+    .v-col[class*="sm-1"] {
+        width: 25%;
+    }
+
+    .v-col[class*="sm-2"] {
+        width: 50%;
+    }
+
+    .v-col[class*="sm-3"] {
+        width: 75%;
+    }
+
+    .v-col[class*="sm-4"] {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 640px) {
+
+    .v-col {
+        padding-left: var(--v-col-padding_max-639);
+        padding-right: var(--v-col-padding_max-639);
+    }
+
+    .v-col:not([class*="mg-bottom"]) {
+        margin-bottom: var(--v-col-margin-btm_min-640);
+    }
+
+    .v-col[class*="md-1"] {
+        width: 16.6%;
+    }
+
+    .v-col[class*="md-2"] {
+        width: 33.3%;
+    }
+
+    .v-col[class*="md-3"] {
+        width: 50%;
+    }
+
+    .v-col[class*="md-4"] {
+        width: 66.6%;
+    }
+
+    .v-col[class*="md-5"] {
+        width: 83.3%;
+    }
+
+    .v-col[class*="md-6"] {
+        width: 100%;
+    }
+
+}
+
+/* Add a breakpoint between 1280px and 1599px */
+
+@media (min-width: 1279.98px) {
+    
+    .v-col {
+        padding-left: var(--v-col-padding_min-1280);
+        padding-right: var(--v-col-padding_min-1280);
+    }
+
+    .v-col:not([class*="mg-bottom"]) {
+        margin-bottom: var(--v-col-margin-btm_min-1280);
+    }
+
+    .v-col[class*="lg-1"] {
+        width: 12.5%;
+    }
+
+    .v-col[class*="lg-2"] {
+        width: 25%;
+    }
+
+    .v-col[class*="lg-3"] {
+        width: 37.5%;
+    }
+
+    .v-col[class*="lg-4"] {
+        width: 50%;
+    }
+
+    .v-col[class*="lg-5"] {
+        width: 62.5%;
+    }
+
+    .v-col[class*="lg-6"] {
+        width: 75%;
+    }
+
+    .v-col[class*="lg-7"] {
+        width: 87.5%;
+    }
+
+    .v-col[class*="lg-8"] {
+        width: 100%;
+    }
+
+}
+
+@media ( min-width: 1600px ) {
+
+    .v-col {
+        padding-left: var(--v-col-padding_min-1600);
+        padding-right: var(--v-col-padding_min-1600);
+    }
+
+    .v-col:not([class*="mg-bottom"]) {
+        margin-bottom: var(--v-col-margin-btm_min-1600);
+    }
+
+    .v-col[class*="lg-x-1"] {
+        width: 8.3%;
+    }
+
+    .v-col[class*="lg-x-2"] {
+        width: 16.6%;
+    }
+
+    .v-col[class*="lg-x-3"] {
+        width: 25%;
+    }
+
+    .v-col[class*="lg-x-4"] {
+        width: 33.3%;
+    }
+
+    .v-col[class*="lg-x-5"] {
+        width: 41.6%;
+    }
+
+    .v-col[class*="lg-x-6"] {
+        width: 50%;
+    }
+
+    .v-col[class*="lg-x-7"] {
+        width: 58.3%;
+    }
+
+    .v-col[class*="lg-x-8"] {
+        width: 66.6%;
+    }
+
+    .v-col[class*="lg-x-9"] {
+        width: 75%;
+    }
+
+    .v-col[class*="lg-x-10"] {
+        width: 83.3%;
+    }
+
+    .v-col[class*="lg-x-11"] {
+        width: 91.6%;
+    }
+
+    .v-col[class*="lg-x-12"] {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 639.98px) {
+
+    .v-col.hidden-sm {
+        display: none; 
+    }
+
+} 
+
+
+@media (min-width: 640px) and (max-width: 1279.98px) {
+
+    .v-col.hidden-md {
+        display: none; 
+    }
+
+}
+
+@media (min-width: 1279.98px) and (max-width: 1599.98px) {
+
+    .v-col.hidden-lg {
+        display: none; 
+    }
+
+}
+
+@media ( min-width: 1600px ) {
+
+    .v-col.hidden-lg-x {
+        display: none; 
+    }
+
+}

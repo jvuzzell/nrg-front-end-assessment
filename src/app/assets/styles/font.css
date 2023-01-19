@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* Font Sizes */
+
+html { font-size: 62.5%; /* 10px */ }
+
+body, 
+.v-col, 
+ol,
+ul,
+dl,
+pre,
+address, 
+pre,
+blockquote, 
+form input, 
+form select, 
+form textarea, 
+form label, 
+button, 
+a  { 
+    font: 1.4rem/1.8rem 'Roboto', sans-serif;  
+    color: var(--swatch_gun-powder)
+} 
+
+h1:not([class*='font-size']), .display-heading { font: 4.2rem/4.6rem 'Roboto', sans-serif; }
+h2:not([class*='font-size']), .x-lg-heading    { font: 3.4rem/3.8rem 'Roboto', sans-serif; }
+h3:not([class*='font-size']), .lg-heading      { font: 2.8rem/2.8rem 'Roboto', sans-serif; }
+h4:not([class*='font-size']), .md-heading      { font: 2.0rem/2.8rem 'Roboto', sans-serif; }
+h5:not([class*='font-size']), .sm-heading      { font: 1.9rem/2.6rem 'Roboto', sans-serif; }
+h6:not([class*='font-size']), .caption         { font: 1.7rem/2.6rem 'Roboto', sans-serif; }
+
+@media(min-width: 960px) { 
+
+    body, 
+    .v-col, 
+    ol,
+    ul,
+    dl,
+    pre,
+    address, 
+    pre,
+    blockquote, 
+    form input, 
+    form select, 
+    form textarea, 
+    form label, 
+    button, 
+    a { 
+        font: 1.8rem/2.8rem 'Roboto', sans-serif; 
+    } 
+
+    h1:not([class*='font-size']), .display-heading { font: 4.2rem/5.2rem 'Roboto', sans-serif; font-weight: 500; }
+    h2:not([class*='font-size']), .x-lg-heading    { font: 3.6rem/4.0rem 'Roboto', sans-serif; }
+    h3:not([class*='font-size']), .lg-heading      { font: 3.2rem/3.2rem 'Roboto', sans-serif; }
+    h4:not([class*='font-size']), .md-heading      { font: 2.2rem/2.8rem 'Roboto', sans-serif; } 
+
+}
+ 
+h1, .display-heading { margin-bottom: 20px; }
+h2, .x-lg-heading    { margin-bottom: 20px; }
+h3, .lg-heading      { margin-bottom: 20px; }
+h4, .md-heading      { margin-bottom: 20px; }
+ 
+p + h1, p + .display-heading, 
+p + h2, p + .x-lg-heading, 
+p + h3, p + .lg-heading {
+  padding-top: 15px; 
+}
+
+p, ul, ol, dl, address, tel  { margin-bottom: 20px; }
+li, dd                       { margin-bottom: 10px; }
+
+p:last-child, 
+ol:last-child, 
+ul:last-child, 
+dl:last-child {
+  margin-bottom: 0; 
+}
+
+ul > li:last-child,
+ol > li:last-child,
+dl > dl:last-child { 
+  margin-bottom: 0; 
+}
+ 
+/* Lists  */
+
+ul li { list-style-position: inside; }
+ul.inline li {  display: inline; }
+
+/* Font Weights */
+
+b, strong, .strong, .bold { font-weight: 700 !important; }
+.semibold { font-weight: 500 !important; }
+.regular-weight { font-weight: 400 !important; }
+.light-weight { font-weight: 300 !important; }
+
+/* Font Styles */
+
+em, .italic { font-style: italic !important; }
+.text-center { text-align: center !important; }
+.text-left { text-align: left !important; }
+.text-right { text-align: right !important; }
+.uppercase { text-transform: uppercase !important; }
+a, .underline { text-decoration: underline !important; } 
+.no-underline, .no-underline-hover:hover { text-decoration: none !important; } 
+
+/* Floats */
+.float-right { float: right; }
+.float-left { float: left; }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ 
+pre { padding: 20px; } 
+
+.no-wrap { white-space: nowrap; }

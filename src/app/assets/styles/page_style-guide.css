@@ -1,0 +1,42 @@
+.sidebar {
+    position: relative;
+    overflow-y: scroll;
+}
+
+.sidebar > .container {
+    position: fixed;
+}  
+
+.swatch { 
+    width: 100%;
+    height: 100px;
+    max-height: 100%;
+    border-radius: 10px;
+    position: relative;
+} 
+
+.swatch p { 
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.swatch-heading { 
+    position: relative;
+    width: 100%;
+    height: 100px;
+    max-height: 100%;
+}
+
+.swatch-heading h4 { 
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 100%;
+    text-align: right; 
+    padding-right: 20px;
+}

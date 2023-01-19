@@ -1,0 +1,14 @@
+@media(max-width: 639px) {
+    .textarea {
+        max-width: 100%; 
+        position: relative;
+        top: 0; 
+        transform: translateY(0);
+    } 
+}
+
+@media(min-width: 640px) {
+    .textarea {
+        max-width: 45%;
+    } 
+}

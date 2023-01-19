@@ -1,0 +1,37 @@
+:root { 
+
+    /* Grid */
+    --h-row-padding_max-639: -10px; 
+    --h-row-padding_min-640: -10px; 
+    --h-row-padding_min-960: -10px; 
+    --h-row-padding_min-1280: -10px; 
+    --h-row-padding_min-1600: -10px;  
+
+    --v-col-padding_max-639: 10px;
+    --v-col-padding_min-640: 10px;
+    --v-col-padding_min-960: 10px;
+    --v-col-padding_min-1280: 10px;
+    --v-col-padding_min-1600: 10px; 
+
+    --v-col-margin-btm_max-639: 20px;
+    --v-col-margin-btm_min-640: 20px;
+    --v-col-margin-btm_min-960: 20px;
+    --v-col-margin-btm_min-1280: 20px;
+    --v-col-margin-btm_min-1600: 20px;
+
+    /* Layout */
+    --max-content-width: 1440px;  
+    --content-lock-padding_max-1279: 20px; 
+    --content-lock-padding_min-1280: 40px;
+
+    /* Color Palette */
+    --swatch_cloud: #FAFAFA; 
+    --swatch_gun-powder: #38454A; 
+    --swatch_deep-sea: #005876; 
+    --swatch_bright-orange: #FF5100;  
+    --swatch_ash: #aaa;
+ 
+    /* Transitions */
+    --transition-speed-fast: 150ms;
+
+}

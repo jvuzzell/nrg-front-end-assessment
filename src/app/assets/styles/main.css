@@ -1,0 +1,94 @@
+/**
+ * Layout
+ */ 
+
+ .main-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;  
+}
+
+.main-content {
+    padding: 30px 0px;
+    display: block;
+    position: relative;
+	min-height: 100vh;
+}
+
+/* Content Lock */
+
+.content-lock {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}  
+
+.narrow.content-lock { 
+    max-width: 960px;
+}
+
+@media (max-width: 1279px) {
+
+    .content-lock {
+        padding-left: var(--content-lock-padding_max-1279); 
+        padding-right: var(--content-lock-padding_max-1279);
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    .content-lock {
+        padding-left: var(--content-lock-padding_min-1280); 
+        padding-right: var( --content-lock-padding_min-1280);
+    }
+
+} 
+
+/* Section */
+  
+.main-content > section[class*="background-color"]:first-child { 
+    margin-top: -30px; 
+    padding-top: 30px;
+} 
+
+/* Horizontal Rule */
+
+hr {
+    background-color: var(--swatch_gun-powder); 
+}
+
+/* Table */
+table {
+    min-width: 100%;
+}
+
+thead {
+    color: #fff;
+    background: var(--swatch_bright-orange);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+td {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+tbody td:not(:last-child) {
+    border-right: 1px solid var(--swatch_ash);
+} 
+
+/* Alignment */
+.vertical-align { 
+    position:absolute; 
+    margin: 0 auto; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+  

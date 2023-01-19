@@ -1,0 +1,94 @@
+/* Buttons */
+ 
+button,
+[class*="btn"], 
+[class*="button"] {
+    padding: 20px 100px;
+    white-space: nowrap; 
+    display: inline-block;
+} 
+ 
+@media(max-width: 639px) {
+    button,
+    [class*="btn"], 
+    [class*="button"] {
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+button + button {
+     margin-left: 5px; 
+} 
+
+.btn-no-background {
+    padding: 0; 
+}
+
+.btn-small-padding {
+    padding: 5px 10px; 
+}
+
+button.btn-no-background + button {
+    margin-left: 20px; 
+}
+
+.btn-no-background:hover {
+    text-decoration: underline;
+} 
+
+button[class*='background'] {
+    text-align: center;
+}
+
+[class*="btn"][class*='background'],
+[class*="btn"][class*='border'] , 
+[class*="button"][class*='background'],
+[class*="button"][class*='border'],
+button[class*='background'], 
+button[class*='border'] { 
+    transition: background var(--transition-speed-fast) ease-in-out, color var(--transition-speed-fast) ease-in-out;
+}
+
+[class*="btn"][class*='background'],
+[class*="btn"][class*='border'] , 
+[class*="button"][class*='background'],
+[class*="button"][class*='border'],
+button[class*='background'], 
+button[class*="border"] { 
+    border-radius: 5px;
+} 
+
+[class*="btn"][class*='border'] , 
+[class*="button"][class*='border'],
+button[class*='border'] { 
+    border-width: 2px; 
+    padding: 18px 100px;
+}
+
+button.has-underline { 
+    opacity: 1; 
+    transition: all var(--transition-speed-fast) ease-in;
+}
+
+button.has-underline:hover { 
+    opacity: 0.5;
+}
+
+/* Button Background Colors */
+
+[class*="btn"][class*='background-color_bright-orange']:hover,
+[class*="button"][class*='background-color_bright-orange']:hover,
+button.background-color_bright-orange:hover  { background-color: #fff; color: var(--swatch_bright-orange); } 
+
+[class*="btn"][class*='background-color_deep-sea']:hover,
+[class*="button"][class*='background-color_deep-sea']:hover,
+button.background-color_deep-sea:hover  { background-color: #fff; color: var(--swatch_deep-sea); }
+
+[class*="btn"][class*='border-color_bright-orange']:hover,
+[class*="button"][class*='border-color_bright-orange']:hover,
+button.border-color_bright-orange:hover  { background-color: var(--swatch_bright-orange); color: #fff; } 
+
+[class*="btn"][class*='border-color_deep-sea']:hover,
+[class*="button"][class*='border-color_deep-sea']:hover,
+button.border-color_deep-sea:hover  { background-color: var(--swatch_deep-sea); color: #fff; }
