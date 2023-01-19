@@ -2,7 +2,10 @@
     "hero": { 
         "twoColumn_TextareaAndImage" : { 
             "textarea" : { 
-                "heading" : "Surge Protection Plans", 
+                "heading" : { 
+                    "text" : "Surge Protection Plans", 
+                    "classList" : ""
+                }, 
                 "textarea" : "When bad weather threatens your eletronics and appliances. Direct Energy Surge Protect provided by Allied Warranty will make sure you are protected with our surge protection plans.", 
                 "buttons" : [
                     {
@@ -13,14 +16,25 @@
                             "internal" : true
                         }
                     }
-                ]
+                ], 
+                "classList" : "vertical-align"
             }, 
             "image" : { 
                 "relativeSrc" : "../../../images/man-on-cpu-potatoa.png"
             }
         }
     }, 
-    "about" : {}, 
+    "about" : {
+        "textarea" : { 
+            "heading" : {
+                "text" : "What is a Surge Protection Plan?", 
+                "classList" : "color_deep-sea"
+            },
+            "textarea" : "You'll receive up to $2,000 of annual coverage for eligible electronic devices and kitchen appliances in case of a damaging power surge.", 
+            "buttons" : [], 
+            "classList" : "text-center full-width"
+        }
+    }, 
     "process" : {}, 
     "pricing" : {}
 }

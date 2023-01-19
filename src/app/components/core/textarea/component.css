@@ -11,4 +11,8 @@
     .textarea {
         max-width: 45%;
     } 
+} 
+
+.textarea.full-width { 
+    max-width: 100%;
 }

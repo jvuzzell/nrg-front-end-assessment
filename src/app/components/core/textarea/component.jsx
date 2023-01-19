@@ -3,6 +3,8 @@ import './component.css';
 const Headline = (props) => { 
 
     let buttons = []; 
+    let containerClassList = 'textarea '; 
+    let headerClassList = 'display-heading light-weight ';
 
     props.content.buttons.map((button, index) => { 
         buttons.push(<a 
@@ -14,9 +16,12 @@ const Headline = (props) => {
                     </a>);
     });
 
+    containerClassList += props.content.classList; 
+    headerClassList += props.content.heading.classList;
+
     return (
-        <div className="textarea vertical-align">
-            <h1 className="light-weight">{props.content.heading}</h1>
+        <div className={containerClassList}>
+            <h2 className={headerClassList}>{props.content.heading.text}</h2>
             <p className="has-mg-bottom-20">{props.content.textarea}</p> 
             {buttons}
         </div>
