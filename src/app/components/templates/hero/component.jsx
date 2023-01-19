@@ -1,5 +1,5 @@
 import './component.css'; 
-import TwoColumn_TextareaAndImage from '../layout/twoColumn_TextareaAndImage/component';
+import TwoColumn_TextareaAndImage from '../../layout/twoColumn_TextareaAndImage/component';
 
 const Hero = () => {
     return ( 

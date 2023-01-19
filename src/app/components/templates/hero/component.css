@@ -2,7 +2,7 @@
     content: '';
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../../assets/images/gray-curve.svg);
+    background-image: url(../../../assets/images/gray-curve.svg);
     display: block;
     width: 100%; 
     padding-bottom: 9%; 
