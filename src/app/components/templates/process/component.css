@@ -1,0 +1,15 @@
+@media(min-width:1280px) {
+
+    .process .v-col:first-child { 
+        width: 40%;
+    }
+
+    .process .v-col:nth-child(2) { 
+        width: 60%;
+    } 
+
+    .process .textarea.vertical-align { 
+        max-width: 100%;
+    }
+
+}
