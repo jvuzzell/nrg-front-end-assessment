@@ -69,7 +69,7 @@ p + h3, p + .lg-heading {
 }
 
 p, ul, ol, dl, address, tel  { margin-bottom: 20px; }
-li, dd                       { margin-bottom: 10px; }
+li, dd                       { margin-bottom: 5px; }
 
 p:last-child, 
 ol:last-child, 

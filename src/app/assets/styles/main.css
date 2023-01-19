@@ -101,4 +101,43 @@ tbody td:not(:last-child) {
     .v-col p { 
         text-align: left;
     }
+} 
+
+/* Cards */
+.card {
+    box-shadow: var(--drop-shadow-sm);
+    border-radius: 5px; 
+    padding: 20px;  
+    margin-left: 20px; 
+    margin-right: 20px
+} 
+
+.display-flex { 
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.display-flex[class*="card-container"] { 
+    margin-left: -20px; 
+    margin-right: -20px;
+}
+
+
+@media(min-width: 640px) {
+
+    .card {
+        margin-left: 40px; 
+        margin-right: 40px
+    } 
+
+    .display-flex[class*="card-container"] { 
+        margin-left: -40px; 
+        margin-right: -40px;
+    }
+
+    .card { 
+        flex-grow: 1;
+        width: 33%;
+    } 
+    
 }

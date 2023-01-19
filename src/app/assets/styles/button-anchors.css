@@ -79,11 +79,11 @@ button.has-underline:hover {
 
 [class*="btn"][class*='background-color_bright-orange']:hover,
 [class*="button"][class*='background-color_bright-orange']:hover,
-button.background-color_bright-orange:hover  { background-color: #fff; color: var(--swatch_bright-orange); } 
+button.background-color_bright-orange:hover  { background-color: var(--swatch_cloud); color: var(--swatch_bright-orange); } 
 
 [class*="btn"][class*='background-color_deep-sea']:hover,
 [class*="button"][class*='background-color_deep-sea']:hover,
-button.background-color_deep-sea:hover  { background-color: #fff; color: var(--swatch_deep-sea); }
+button.background-color_deep-sea:hover  { background-color: var(--swatch_cloud); color: var(--swatch_deep-sea); }
 
 [class*="btn"][class*='border-color_bright-orange']:hover,
 [class*="button"][class*='border-color_bright-orange']:hover,
