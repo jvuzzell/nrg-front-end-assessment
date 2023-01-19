@@ -1,7 +1,7 @@
 import './component.css';
 import Textarea from '../../core/textarea/component'; 
 import Image from '../../core/image/component';
-import Consumer from '../../../data/configContext';
+import Consumer from '../../../contexts/configContext';
 
 const TwoColumn_headlineAndImage = (props) => { 
     return (

@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import '../main.js';
 import Content from '../data/content_index-html.json';
 import Hero from "../components/hero/component.jsx";
-import { ConfigProvider } from '../data/configContext';
+import { ConfigProvider } from '../contexts/configContext';
 
 const container = document.getElementById("root");
 const root = createRoot(container);
