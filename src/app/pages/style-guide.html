@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel="shortcut icon" href="<%=require('../../../src/app/assets/favicon/favicon.ico')%>" type="image/x-icon">
+
+</head>
+    <body>
+        <div class="main-content">
+            <section> 
+                <div class="content-lock"> 
+                    <div class="h-row">
+                        <div class="v-col md-1 sidebar"> 
+                            <div class="container">
+                                <ul>
+                                    <li class="has-mg-bottom-20">
+                                        <span class="bold">Typographpy</span>
+                                        <ul class="has-mg-top-10 has-mg-left-25">
+                                            <li><a href="#font-stack">Font Stack</a></li>
+                                            <li><a href="#font-sizes">Font Sizes</a></li>
+                                            <li><a href="#text-styles">Text Styles</a></li>
+                                            <li><a href="#font-weights">Font Weights</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-mg-bottom-20">
+                                        <span class="bold">Color Schemes</span> 
+                                        <ul class="has-mg-top-10 has-mg-left-25">
+                                            <li><a href="#swatches">Swatches</a></li>
+                                            <li><a href="#color-classes">Color Classes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-mg-bottom-20">
+                                        <span class="bold">Buttons & Anchors</span> 
+                                        <ul class="has-mg-top-10 has-mg-left-25">
+                                            <li><a href="#basic-buttons">Basic Buttons</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="v-col md-4">
+                            <div class="h-row">
+                                <div class="v-col has-mg-bottom-40"> 
+                                    <h1 class="has-mg-bottom-40 regular-weight">Style Guide</h1>
+                                    <h2><strong>Typography</strong></h2>
+                                    <hr class="background-color_ash">
+                                    <h3 id="font-stack" class="lg-heading">Font Stack</h3>
+                                    <p class="md-heading">"<strong class="has-color_deep-sea">Roboto</strong>", Sans-serif</p>
+                                </div> 
+                                <hr class="background-color_ash has-mg-bottom-30">
+                                <div class="v-col">
+                                    <h3 id="font-sizes" class="lg-heading">Font Sizes <span class="sm-heading"><em>(font-size/line-height)</span></em></h3> 
+                                    <table>
+                                        <thead class="md-heading semibold no-wrap background-color_deep-sea">
+                                            <tr>
+                                              <td width="100%">Class</td>
+                                              <td>320-639px</td>
+                                              <td>960px and above</td>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <td class="no-wrap display-heading">.display-heading</td>
+                                              <td>4.2rem/4.6rem</td>
+                                              <td>4.2rem/5.2rem</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="no-wrap x-lg-heading">.x-lg-heading</td>
+                                              <td>3.4rem/3.8rem</td>
+                                              <td>3.6rem/4.0rem</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="no-wrap lg-heading">.lg-heading</td>
+                                              <td>2.8rem/2.8rem</td>
+                                              <td>3.2rem/3.2rem </td>
+                                            </tr>
+                                            <tr>
+                                              <td class="no-wrap md-heading">.md-heading</td>
+                                              <td>2.0rem/2.8rem</td>
+                                              <td>2.2rem/2.8rem </td>
+                                            </tr>
+                                            <tr>
+                                              <td class="no-wrap sm-heading">.sm-heading</td>
+                                              <td>1.9rem/2.6rem</td>
+                                              <td>same</td>
+                                            </tr>
+                                            <tr>
+                                              <td class="no-wrap caption">.caption</td>
+                                              <td>1.7rem/2.6rem</td>
+                                              <td>Same</td>
+                                            </tr>
+                                          </tbody>
+                                    </table>
+                                </div>
+                                <hr class="background-color_ash has-mg-bottom-30">
+                                <div class="v-col">
+                                    <h3 id="text-styles" class="lg-heading">Text Styles</h3>
+                                    <table>
+                                        <thead class="md-heading semibold no-wrap background-color_deep-sea">
+                                            <tr>
+                                                <td>Class</td>
+                                                <td width="100%">CSS Property</td>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                                <td class="semibold no-wrap">em, .italic</td>
+                                                <td>font-style: italic</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="semibold no-wrap">.uppercase</td>
+                                                <td>text-transform: uppercase</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="semibold no-wrap">.underline</td>
+                                                <td>text-decoration: underline</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="semibold no-wrap">.no-underline</td>
+                                                <td>text-decoration: none</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="semibold no-wrap">.no-wrap</td>
+                                                <td>white-space: nowrap</td>
+                                              </tr>
+                                              <tr>
+                                                <td class="semibold no-wrap">.text-center</td>
+                                                <td>text-align: center</td>
+                                              </tr>
+                                              <tr>
+                                                <td class="semibold no-wrap">.text-left</td>
+                                                <td>text-align: left</td>
+                                              </tr>
+                                              <tr>
+                                                <td class="semibold no-wrap">.text-right</td>
+                                                <td>text-align: right</td>
+                                              </tr>
+                                          </tbody>
+                                    </table>
+                                </div>
+                                <hr class="background-color_ash has-mg-bottom-30">
+                                <div class="v-col">
+                                    <h3 id="font-weights" class="lg-heading">Font Weights</h3>
+                                    <table>
+                                        <thead class="md-heading semibold no-wrap background-color_deep-sea">
+                                            <tr>
+                                                <td>Class</td>
+                                                <td width="100%">CSS Property</td>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                                <td class="semibold no-wrap">b, strong, .strong, .bold</td>
+                                                <td>font-weight: 700</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="semibold no-wrap">.semibold</td>
+                                                <td>font-weight: 500</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="semibold no-wrap">.regular-weight</td>
+                                                <td>font-weight: 400</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="semibold no-wrap">.light-weight</td>
+                                                <td>font-weight: 300</td>
+                                            </tr>
+                                          </tbody>
+                                    </table>
+                                </div>
+                                <hr class="background-color_ash"> 
+                                <div class="h-row">
+                                    <div class="v-col has-mg-top-20">
+                                        <h2><strong>Color Schemes</strong></h2>
+                                        <hr class="background-color_ash">
+                                        <h3 id="swatches" class="lg-heading">Swatches</h3>
+                                    </div>
+                                </div>
+                                <div class="h-row">
+                                    <div class="v-col lg-2 swatch-heading">
+                                        <h4>Primary Palette</h4>
+                                    </div>
+                                    <div class="v-col lg-6">
+                                        <div class="h-row">
+                                            <div class="v-col sm-2 md-3 lg-4">
+                                                <div class="swatch background-color_deep-sea">
+                                                    <p>#005876<br>var(--swatch_deep-sea)</p>
+                                                </div>
+                                            </div>
+                                            <div class="v-col sm-2 md-3 lg-4">
+                                                <div class="swatch background-color_bright-orange">
+                                                    <p>#FF5100<br>var(--swatch_bright-orange)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="v-col lg-2 swatch-heading">
+                                        <h4>Secondary Palette</h4>
+                                    </div>
+                                    <div class="v-col lg-6">
+                                        <div class="h-row">
+                                            <div class="v-col sm-2 md-3 lg-4">
+                                                <div class="swatch background-color_gun-powder">
+                                                    <p>#38454A<br>var(--swatch_gun-powder)</p>
+                                                </div>
+                                            </div>
+                                            <div class="v-col sm-2 md-3 lg-4">
+                                                <div class="swatch background-color_cloud">
+                                                    <p>#FAFAFA<br>var(--swatch_cloud)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="background-color_ash">
+                                <div class="v-col">
+                                    <h2 id="color-classes" class="lg-heading">Color Classes</h2> 
+                                    <table>
+                                        <thead class="md-heading semibold no-wrap background-color_deep-sea">
+                                            <tr>
+                                              <td>Backgrounds</td>
+                                              <td>Colors</td>
+                                              <td>Borders</td>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                                <td class="no-wrap">
+                                                    <ul class="text-left">
+                                                        <li>.background-color_deep-sea</li>
+                                                        <li>.background-color_bright-orange</li>
+                                                        <li>.background-color_gun-powder</li>
+                                                        <li>.background-color_cloud</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="no-wrap">
+                                                    <ul class="text-left">
+                                                        <li>.color_deep-sea</li>
+                                                        <li>.color_gun-powder</li>
+                                                        <li>.color_white</li>
+                                                    </ul>
+                                                </td>
+                                                <td class="no-wrap">
+                                                    <ul class="text-left">
+                                                        <li>.border-color_deep-sea</li>
+                                                        <li>.border-color_gun-powder</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                          </tbody>
+                                    </table>
+                                </div> 
+                                <hr class="background-color_ash"> 
+                                <div class="h-row">
+                                    <div class="v-col has-mg-top-20">
+                                        <h2><strong>Buttons & Anchors</strong></h2>
+                                        <hr class="background-color_ash">
+                                        <h3 id="basic-buttons" class="lg-heading">Basic Buttons</h3>
+                                    </div>
+                                </div> 
+                                <div class="h-row">
+                                    <div class="v-col sm-2 md-2 text-center">
+                                        <div class="h-row">
+                                            <div class="v-col">
+                                                <button class="btn-no-background underline no-underline-hover uppercase">CTA Button</button>
+                                            </div>
+                                            <div class="v-col">
+                                                <p><strong>CSS Classes:</strong> .btn-no-background</p> 
+                                                <p><strong>Guidance:</strong> Primary CTA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="v-col sm-2 md-2 text-center">
+                                        <div class="h-row">
+                                            <div class="v-col">
+                                                <button class="background-color_deep-sea uppercase">CTA Button</button>
+                                            </div>
+                                            <div class="v-col">
+                                                <p><strong>CSS Classes:</strong> .background-color_deep-sea</p> 
+                                                <p><strong>Guidance:</strong> Primary CTA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="v-col sm-2 md-2 text-center">
+                                        <div class="h-row">
+                                            <div class="v-col">
+                                                <button class="border-color_deep-sea color_deep-sea uppercase">CTA Button</button>
+                                            </div>
+                                            <div class="v-col">
+                                                <p><strong>CSS Classes:</strong> .border-color_deep-sea</p> 
+                                                <p><strong>Guidance:</strong> Primary CTA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="v-col sm-2 md-2 text-center">
+                                    <div class="h-row">
+                                        <div class="v-col">
+                                            <button class="background-color_bright-orange uppercase">CTA Button</button>
+                                        </div>
+                                        <div class="v-col">
+                                            <p><strong>CSS Classes:</strong> .background-color_bright-orange</p> 
+                                            <p><strong>Guidance:</strong> Primary CTA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="v-col sm-2 md-2 text-center">
+                                    <div class="h-row">
+                                        <div class="v-col">
+                                            <button class="border-color_bright-orange color_bright-orange uppercase">CTA Button</button>
+                                        </div>
+                                        <div class="v-col">
+                                            <p><strong>CSS Classes:</strong> .border-color_bright-orange</p> 
+                                            <p><strong>Guidance:</strong> Primary CTA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            </div> 
+                        </div>
+                        
+                    </div>
+
+                </div> 
+            </section>  
+
+        </div>
+    </body>
+</html>
