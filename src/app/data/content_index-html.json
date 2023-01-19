@@ -4,7 +4,7 @@
             "textarea" : { 
                 "heading" : { 
                     "text" : "Surge Protection Plans", 
-                    "classList" : ""
+                    "classList" : "display-heading light-weight"
                 }, 
                 "textarea" : "When bad weather threatens your eletronics and appliances. Direct Energy Surge Protect provided by Allied Warranty will make sure you are protected with our surge protection plans.", 
                 "buttons" : [
