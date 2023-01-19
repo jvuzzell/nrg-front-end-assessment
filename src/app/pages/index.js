@@ -6,7 +6,8 @@ import { ConfigProvider } from '../contexts/configContext';
 import Content from '../data/content_index-html.json';
 import Hero from "../components/templates/hero/component.jsx";
 import About from "../components/templates/about/component.jsx"; 
-import Process from "../components/templates/process/component.jsx";
+import Process from "../components/templates/process/component.jsx"; 
+import Pricing from "../components/templates/pricing/component.jsx";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -16,7 +17,8 @@ root.render(
         <ConfigProvider value={Content}>
             <Hero />    
             <About />
-            <Process />
+            <Process /> 
+            <Pricing />
         </ConfigProvider>
     </div>
 );

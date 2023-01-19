@@ -4,9 +4,6 @@ import Image from '../../core/image/component';
 import Consumer from '../../../contexts/configContext';
 
 const TwoColumn_headlineAndImage = (props) => {  
-
-
-    
     return (
         <Consumer>
             {ctx => { 

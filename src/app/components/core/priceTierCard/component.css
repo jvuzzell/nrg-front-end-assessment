@@ -1,0 +1,6 @@
+.card_price-tier .image-container { 
+    max-width: 90px;
+    padding: 20px; 
+    border-radius: 50%; 
+    background-color: #E7F1F4;
+}

@@ -53,5 +53,36 @@
             "imageOrientation" : ""
         }
     }, 
-    "pricing" : {}
+    "pricing" : { 
+        "threeColumn_Cards" : {
+            "cards" : [
+                {
+                    "name" : "Direct Energy $1000-Surge Protect",
+                    "benefits" : [
+                        "No service call fee, no long term contract, no pre-inspection required", 
+                        "Up to $1000 in annual coverage", 
+                        "Low monthly fee, convienently added right to your Direct Energy bill"
+                    ], 
+                    "price" : "$6.99/mo", 
+                    "offer" : {
+                        "displayText" : "Select Offer", 
+                        "link" : "/"
+                    }
+                }, 
+                {
+                    "name" : "Direct Energy $2000-Surge Protect",
+                    "benefits" : [
+                        "No service call fee, no long term contract, no pre-inspection required", 
+                        "Up to $1000 in annual coverage", 
+                        "Low monthly fee, convienently added right to your Direct Energy bill"
+                    ], 
+                    "price" : "$9.99/mo", 
+                    "offer" : {
+                        "displayText" : "Select Offer", 
+                        "link" : "/"
+                    }
+                }
+            ]
+        }
+    }
 }
