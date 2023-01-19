@@ -21,20 +21,37 @@
             }, 
             "image" : { 
                 "relativeSrc" : "../../../images/man-on-cpu-potatoa.png"
-            }
+            }, 
+            "imageOrientation" : "float-right"
         }
     }, 
     "about" : {
         "textarea" : { 
             "heading" : {
                 "text" : "What is a Surge Protection Plan?", 
-                "classList" : "color_deep-sea"
+                "classList" : "display-heading light-weight color_deep-sea"
             },
             "textarea" : "You'll receive up to $2,000 of annual coverage for eligible electronic devices and kitchen appliances in case of a damaging power surge.", 
             "buttons" : [], 
             "classList" : "text-center full-width"
         }
     }, 
-    "process" : {}, 
+    "process" : {
+        "twoColumn_TextareaAndImage" : { 
+            "textarea" : { 
+                "heading" : { 
+                    "text" : "How does a Surge Protection Plan work?", 
+                    "classList" : "light-weight color_deep-sea lg-heading"
+                }, 
+                "textarea" : "Direct Energy's Surge Protect plans provide up to a total  of $2,000 in annual coverage for eligible items with no long-term contract and no service call fee. Plus, any needed service will be provided by licensed, insured, and background-checked Master electricians.", 
+                "buttons" : [], 
+                "classList" : "vertical-align"
+            }, 
+            "image" : { 
+                "relativeSrc" : "../../../images/woman-at-cpu.png"
+            }, 
+            "imageOrientation" : ""
+        }
+    }, 
     "pricing" : {}
 }
