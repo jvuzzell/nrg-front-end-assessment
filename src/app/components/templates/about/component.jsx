@@ -11,7 +11,7 @@ const About = () => {
                     <section className="about">
                         <div className="content-lock">
                             <div className="h-row">
-                                <div className="v-col has-mg-top-40">
+                                <div className="v-col has-mg-top-40 has-mg-bottom-50">
                                     <Textarea content={textareaContent} />
                                 </div>
                             </div>
