@@ -91,4 +91,14 @@ tbody td:not(:last-child) {
     transform: translateY(-50%);
 }
 
-  
+@media(max-width: 639px) { 
+    .v-col h1,
+    .v-col h2,
+    .v-col h3,
+    .v-col h4,
+    .v-col h5,
+    .v-col h6, 
+    .v-col p { 
+        text-align: left;
+    }
+}
