@@ -2,16 +2,16 @@ import './component.css';
 import Textarea from '../../core/textarea/component';
 import Consumer from '../../../contexts/configContext';
 
-const Hero = () => {
+const About = () => {
     return ( 
         <Consumer>
             {ctx => { 
                 const textareaContent = ctx[ 'about' ][ 'textarea' ]; 
                 return(  
-                    <section class="about">
+                    <section className="about">
                         <div className="content-lock">
-                            <div class="h-row">
-                                <div class="v-col has-mg-top-40">
+                            <div className="h-row">
+                                <div className="v-col has-mg-top-40">
                                     <Textarea content={textareaContent} />
                                 </div>
                             </div>
@@ -23,4 +23,4 @@ const Hero = () => {
     );  
 }
 
-export default Hero;
+export default About;
