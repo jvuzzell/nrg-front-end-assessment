@@ -1,6 +1,5 @@
 import React from "react";
 import './component.css'; 
-import '../../../assets/icons/fontawesome-6.2.0/light/plug-circle-bolt.svg';
 
 const PriceTierCard = (props) => { 
     
@@ -13,7 +12,7 @@ const PriceTierCard = (props) => {
     return (
         <div className="card card_price-tier">
             <div className="image-container background-color_cloud has-mg-bottom-40">
-                <img src="../../images/plug-circle-bolt.svg"/>
+                <img src={props.content.iconSrc}/>
             </div>
             <h3 className="md-heading semibold color_deep-sea">{props.content.name}</h3>
             <ul>
