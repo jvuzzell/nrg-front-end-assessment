@@ -1,5 +1,6 @@
 import './component.css'; 
 import TwoColumn_TextareaAndImage from '../../layout/twoColumn_TextareaAndImage/component';
+import '../../../assets/images/man-on-cpu-potatoa.png'; 
 
 const Hero = () => {
     return ( 
