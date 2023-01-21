@@ -1,6 +1,10 @@
 import './component.css';
 import PriceTierCard from '../../core/priceTierCard/component';
 import Consumer from '../../../contexts/configContext';
+ 
+const registeredCards = { 
+    PriceTierCard: PriceTierCard
+}
 
 const ThreeColumn_Cards = (props) => {  
     return (
@@ -9,10 +13,11 @@ const ThreeColumn_Cards = (props) => {
                 const cardContent = ctx[ props.parentComponent ][ 'threeColumn_Cards' ][ 'cards' ];
                 
                 let cards = [];
-                
+                const CardType = registeredCards[ props.cardType ]; 
+    
                 cardContent.map((card, index ) => {
                     cards.push(
-                        <PriceTierCard content={card} key={index} />
+                        <CardType content={card} key={index} />
                     )
                 });
 
