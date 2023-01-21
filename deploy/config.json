@@ -3,8 +3,12 @@
   "default": "dev",
   "targets": {
     "dev": {
-      "publicPath" : "", 
-      "assetModuleFilename" : ""
+      "publicPath" : "/public", 
+      "assetModuleFilename" : "./public"
+    }, 
+    "test": {
+      "publicPath" : "/demo/test-nrg/public", 
+      "assetModuleFilename" : "./demo/test-nrg/public"
     }, 
     "prod": {
       "publicPath" : "/demo/nrg-assessment/public", 
