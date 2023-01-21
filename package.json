@@ -5,8 +5,8 @@
     "main": "src/app/index.html",
     "scripts": {
         "build": "webpack --env env=dev --mode development",
-        "deploy:prod": "webpack --env env=prod--mode production && deploy/scripts/_deploy.sh",
-        "deploy:test": "webpack --env env=test --mode production && deploy/scripts/_deploy.sh"
+        "deploy:prod": "webpack --env env=prod--mode production && deploy/scripts/_deploy.sh && npm run build",
+        "deploy:test": "webpack --env env=test --mode production && deploy/scripts/_deploy.sh && npm run build"
     },
     "keywords": [],
     "author": "Joshua Uzzell <josh.uzzell@gmail.com>",
