@@ -1,6 +1,6 @@
 import './component.css'; 
 import Textarea from '../../core/textarea/component';
-import Consumer from '../../../contexts/configContext';
+import Consumer from '../../../contexts/contentContext';
 
 const About = () => {
     return ( 

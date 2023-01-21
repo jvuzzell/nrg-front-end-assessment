@@ -1,7 +1,7 @@
 import { React, createContext } from "react";
 import { createRoot } from "react-dom/client";
 import '../main.js';
-import { ConfigProvider } from '../contexts/configContext';
+import { ConfigProvider } from '../contexts/contentContext';
 
 import Content from '../data/content_index-html.json';
 import Hero from "../components/templates/hero/component.jsx";
@@ -17,12 +17,12 @@ const container = document.getElementById("root");
 const root = createRoot(container);
 
 root.render(
-    <div className="main-content">
-        <ConfigProvider value={Content}>
+    <ConfigProvider value={Content}>
+        <div className="main-content">
             <Hero />    
             <About />
             <Process /> 
-            <Pricing />
-        </ConfigProvider>
-    </div>
-);
+            <Pricing /> 
+        </div> 
+    </ConfigProvider>
+); 

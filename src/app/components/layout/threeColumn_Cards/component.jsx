@@ -1,6 +1,6 @@
 import './component.css';
 import PriceTierCard from '../../core/priceTierCard/component';
-import Consumer from '../../../contexts/configContext';
+import Consumer from '../../../contexts/contentContext';
  
 const registeredCards = { 
     PriceTierCard: PriceTierCard
