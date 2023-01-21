@@ -4,8 +4,9 @@
     "description": "React boilerplate describing the ideal React workflow of Joshua Uzzell as of January 2023. (Workflow subject to evolution).",
     "main": "src/app/index.html",
     "scripts": {
-        "build": "webpack", 
-        "deploy:prod" : "webpack --env production && deploy/scripts/_deploy.sh"
+        "build": "webpack --env env=dev --mode development",
+        "deploy:prod": "webpack --env env=prod--mode production && deploy/scripts/_deploy.sh",
+        "deploy:test": "webpack --env env=test --mode production && deploy/scripts/_deploy.sh"
     },
     "keywords": [],
     "author": "Joshua Uzzell <josh.uzzell@gmail.com>",
