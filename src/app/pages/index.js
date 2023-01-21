@@ -9,6 +9,10 @@ import About from "../components/templates/about/component.jsx";
 import Process from "../components/templates/process/component.jsx"; 
 import Pricing from "../components/templates/pricing/component.jsx";
 
+import '../assets/icons/fontawesome-6.2.0/light/plug-circle-bolt.svg';
+import '../assets/icons/graphic/woman-at-cpu.png';
+import '../assets/images/man-on-cpu-potatoa.png'; 
+
 const container = document.getElementById("root");
 const root = createRoot(container);
 

@@ -1,6 +1,5 @@
 import './component.css'; 
 import ThreeColumn_Cards from '../../layout/threeColumn_Cards/component';
-import '../../../assets/icons/fontawesome-6.2.0/light/plug-circle-bolt.svg';
 
 const Pricing = () => {
     return ( 

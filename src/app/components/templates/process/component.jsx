@@ -1,6 +1,5 @@
 import './component.css'; 
 import TwoColumn_TextareaAndImage from '../../layout/twoColumn_TextareaAndImage/component';
-import '../../../assets/icons/graphic/woman-at-cpu.png';
 
 const Process = () => {
     return ( 
