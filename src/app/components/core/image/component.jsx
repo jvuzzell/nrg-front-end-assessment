@@ -4,7 +4,7 @@ import './component.css';
 const Image = (props) => { 
     
     return (
-        <img src={props.content.relativeSrc}/>
+        <img src={props.content.src}/>
     );  
 }
 
