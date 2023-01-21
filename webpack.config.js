@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const config = require( './deploy/config.json' );
+const { exit } = require('process');
  
 const htmlFileRegex = new RegExp(/(src\/app\/pages\/)|(\/.html)/, 'ig');
 let htmlFiles = [];
@@ -26,13 +27,14 @@ htmlFiles.map(file => {
 
 module.exports = ( env ) => {
 
-  const publicPath = ( env.production ) ? config.targets.prod.publicPath : config.targets.dev.publicPath; 
-  const assetModuleFilename = ( env.production ) ? config.targets.prod.assetModuleFilename : config.targets.dev.assetModuleFilename; 
-  const watch = ( env.production ) ? false : true;  
-  const clean = ( env.production ) ? true : false;  
+  const environment = env.env;  
+  const publicPath = config.targets[ environment ].publicPath; 
+  const assetModuleFilename = config.targets[ environment ].assetModuleFilename; 
+
+  const watch = ( environment === 'dev' ) ? true : false;  
+  const clean = ( environment === 'dev' ) ? true : false;  
 
   return {
-    mode: 'development',
     entry: entryPoints,
     output: {
       path: path.resolve(__dirname, 'public'),
@@ -45,7 +47,7 @@ module.exports = ( env ) => {
     module: {
       rules: [
         {
-          test: /\.(js|jsx)$/,         // <-- added `|jsx` here
+          test: /\.(js|jsx)$/,
           exclude: /node_modules/,
           use: ["babel-loader"],
         },
@@ -63,7 +65,7 @@ module.exports = ( env ) => {
       ],
     },
     resolve: {
-      extensions: [".js", ".jsx"],    // <-- added `.jsx` here
+      extensions: [".js", ".jsx"],
     },
     watch: watch, 
     watchOptions: {
