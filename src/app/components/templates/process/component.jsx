@@ -3,7 +3,7 @@ import TwoColumn_TextareaAndImage from '../../layout/twoColumn_TextareaAndImage/
 
 const Process = () => {
     return ( 
-        <section className='process'>
+        <section className='process' data-hud="template/process">
             <div className="content-lock">
                 <TwoColumn_TextareaAndImage parentComponent="process"/>
             </div>

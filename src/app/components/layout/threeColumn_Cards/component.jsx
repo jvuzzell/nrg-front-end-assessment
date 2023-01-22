@@ -22,7 +22,7 @@ const ThreeColumn_Cards = (props) => {
                 });
 
                 return(  
-                    <div className="threeColumn_card-container display-flex" >
+                    <div className="threeColumn_card-container display-flex"  data-hud="layout/threeColumn_Cards">
                         {cards}
                     </div>
                 )

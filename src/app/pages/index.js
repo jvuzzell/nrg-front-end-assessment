@@ -2,6 +2,7 @@ import { React, createContext } from "react";
 import { createRoot } from "react-dom/client";
 import '../main.js';
 import { ConfigProvider } from '../contexts/contentContext';
+import ComponentHud from '../components/functional/componentEditor/hud/component'; 
 
 import Content from '../data/content_index-html.json';
 import Hero from "../components/templates/hero/component.jsx";
@@ -23,6 +24,8 @@ root.render(
             <About />
             <Process /> 
             <Pricing /> 
-        </div> 
+        </div>   
+        <ComponentHud />
     </ConfigProvider>
 ); 
+ 

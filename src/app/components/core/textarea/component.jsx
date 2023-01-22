@@ -1,6 +1,6 @@
 import './component.css';
 
-const Headline = (props) => { 
+const Textarea = (props) => { 
 
     let buttons = []; 
     let containerClassList = 'textarea '; 
@@ -20,7 +20,7 @@ const Headline = (props) => {
     headerClassList += props.content.heading.classList;
 
     return (
-        <div className={containerClassList}>
+        <div className={containerClassList}  data-hud="core/textarea">
             <h2 className={headerClassList}>{props.content.heading.text}</h2>
             <p className="has-mg-bottom-20">{props.content.textarea}</p> 
             {buttons}
@@ -28,4 +28,4 @@ const Headline = (props) => {
     );  
 }
 
-export default Headline;
+export default Textarea;

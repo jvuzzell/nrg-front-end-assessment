@@ -1,10 +1,10 @@
 @media(min-width:1280px) {
 
-    .process .v-col:first-child { 
+    .process .v-col.left { 
         width: 40%;
     }
 
-    .process .v-col:nth-child(2) { 
+    .process .v-col.right { 
         width: 60%;
     } 
 

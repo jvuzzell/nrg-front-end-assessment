@@ -3,4 +3,8 @@
     padding: 20px; 
     border-radius: 50%; 
     background-color: #E7F1F4;
+} 
+
+body[data-component-hud-active=true] [data-hud="core/priceTierCard"] .hud-controls { 
+    top: -60px;
 }

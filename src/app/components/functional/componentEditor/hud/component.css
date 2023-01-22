@@ -1,0 +1,39 @@
+body[data-component-hud-active=true] [data-hud] { 
+    border: 3px #eee dashed;
+    box-sizing: border-box;
+}
+
+body[data-component-hud-active=true] [data-hud].hud-visible { 
+    border: 3px var(--swatch_deep-sea) solid;
+} 
+
+body[data-component-hud-active=true] [data-hud] > * button, 
+body[data-component-hud-active=true] [data-hud] > * a { 
+    pointer-events: none;
+} 
+ 
+.hud-controls { 
+    position: relative;
+    right: 0;  
+    top: -40px;
+    opacity: 0;
+    z-index: 2; 
+} 
+
+.hud-controls > button { 
+    padding: 5px; 
+    color: #fff; 
+    font-weight: bold; 
+    background-color: var(--swatch_deep-sea); 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;   
+} 
+
+body[data-component-hud-active=true] .hud-controls > button { 
+    pointer-events: initial;
+}
+
+body[data-component-hud-active=true] [data-hud].hud-visible > .hud-controls { 
+    opacity: 1; 
+
+}

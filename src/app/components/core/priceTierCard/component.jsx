@@ -10,7 +10,7 @@ const PriceTierCard = (props) => {
     });
 
     return (
-        <div className="card card_price-tier">
+        <div className="card card_price-tier" data-hud="core/priceTierCard">
             <div className="image-container background-color_cloud has-mg-bottom-40">
                 <img src={props.content.iconSrc}/>
             </div>
