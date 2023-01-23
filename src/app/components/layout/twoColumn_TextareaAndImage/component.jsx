@@ -7,8 +7,7 @@ import { useContext } from "react";
 const TwoColumn_headlineAndImage = (props) => {    
     
     const ctx = useContext( ContentContext ); 
-
-    console.log( ctx );
+    
     let imageColumnClassList = "v-col md-3 lg-4 left ";
     imageColumnClassList += ctx[ props.parentComponent ][ 'twoColumn_TextareaAndImage' ][ 'imageOrientation' ];
 

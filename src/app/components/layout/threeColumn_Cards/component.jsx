@@ -8,7 +8,6 @@ const registeredCards = {
 }
 
 const ThreeColumn_Cards = (props) => {  
-    
     const ctx = useContext( ContentContext ); 
     const cardContent = ctx[ props.parentComponent ][ 'threeColumn_Cards' ][ 'cards' ];
                 
