@@ -14,10 +14,11 @@ body[data-component-hud-active=true] [data-hud] > * a {
  
 .hud-controls { 
     position: relative;
-    right: 0;  
+    left: 0;  
     top: -40px;
     opacity: 0;
-    z-index: 2; 
+    z-index: 2;  
+    text-align: left;
 } 
 
 .hud-controls > button { 
@@ -35,5 +36,8 @@ body[data-component-hud-active=true] .hud-controls > button {
 
 body[data-component-hud-active=true] [data-hud].hud-visible > .hud-controls { 
     opacity: 1; 
+} 
 
-}
+body[data-component-hud-active=false] .hud-controls { 
+    pointer-events: none;
+} 

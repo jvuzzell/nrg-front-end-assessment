@@ -8,7 +8,7 @@ const About = () => {
     const textareaContent = content[ 'about' ][ 'textarea' ];
     
     return(  
-        <section className="about"  data-hud="template/about">
+        <section className="about"  data-hud="templates/about">
             <div className="content-lock">
                 <div className="h-row">
                     <div className="v-col has-mg-top-40 has-mg-bottom-50">

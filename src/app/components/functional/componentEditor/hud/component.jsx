@@ -1,12 +1,17 @@
-import { useEffect } from 'react';
 import './component.css'; 
-import { HudController } from './hudController';
 
+import { useContext, useEffect } from 'react';
+import { HudController } from './hudController';
+import MarkupContext from '../../../../context/markupContext';
+
+// HUD = heads-up display
 const ComponentHud = function( props ) {
- 
-    useEffect(function() {
-        HudController.dispatch.init();
-    });
+
+    const { markup, setMarkup } = useContext( MarkupContext );
+
+    useEffect(function() { 
+        HudController.init( markup, setMarkup );
+    }, []); 
 
 }  
 

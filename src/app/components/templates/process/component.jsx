@@ -1,11 +1,11 @@
 import './component.css'; 
-import TwoColumn_TextareaAndImage from '../../layout/twoColumn_TextareaAndImage/component';
+import TwoColumn_HeadlineAndImage from '../../layout/twoColumn_HeadlineAndImage/component';
 
 const Process = () => {
     return ( 
-        <section className='process' data-hud="template/process">
+        <section className='process' data-hud="templates/process">
             <div className="content-lock">
-                <TwoColumn_TextareaAndImage parentComponent="process"/>
+                <TwoColumn_HeadlineAndImage parentComponent="process"/>
             </div>
         </section>
     );  

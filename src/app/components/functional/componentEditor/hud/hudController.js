@@ -1,16 +1,34 @@
+import { Flyouts } from 'flyout-overlay-js/flyout';
+
 export const HudController = (function() {
-    
+
+    const Constructor = function( markup, setMarkup ) {
+        this.markup = markup; 
+        this.setMarkup = setMarkup;  
+        this.dispatch.init();
+    }
+
     const dispatch = {
         
         init : function() {
 
             let hudNodeList = document.querySelectorAll( '[data-hud]' ); 
-            
             this.addHoverEffect( hudNodeList );
-            this.attachControls( hudNodeList );
-            this.toggleHudMode(); 
-            
+            this.attachControls( hudNodeList ); 
+            this.initHudToggle();
+
         },  
+ 
+        initHudToggle : function() {
+            
+            const hudToggle = this.toggleHudMode; 
+
+            document.getElementById( 'hudToggle' ).addEventListener('click', event => {
+                event.target.classList.toggle('hud-active'); 
+                hudToggle();
+            });
+
+        }, 
 
         addHoverEffect : function( hudNodeList ) {  
 
@@ -78,18 +96,20 @@ export const HudController = (function() {
             hudNode.prepend( controlContainer );
 
         },
- 
-        yelp : function( event ) { 
-
-            console.error( event.target);
-
-        }, 
 
         generateControls : function( hudNode ) { 
 
             const hudKey = hudNode.dataset.hud; 
             const controlList = {
-                'copy' : { html: document.createElement( 'button' ), displayName : 'copy' }, 
+                'copy' : { 
+                    html: document.createElement( 'button' ), 
+                    displayName : 'copy',  
+                    useFlyout : true, 
+                    flyoutConfig : {
+                        triggerEvent : 'click',
+                        target : 'copyCodeControls'
+                    }
+                }, 
                 // 'editContent' : { html: document.createElement( 'button' ), displayName : 'edit content' }
             } 
 
@@ -98,12 +118,16 @@ export const HudController = (function() {
             for( let control in controlList ) {
                 
                 let controlElement = controlList[ control ];
-                controlElement.html.setAttribute( 'data-hudkey', hudKey );
-                controlElement.html.innerText = controlElement.displayName; 
-
-                liveControls[ control ] = controlElement;
+                controlElement.html.setAttribute( 'data-hudkey', hudKey ); 
                 
-                controlElement.html.addEventListener( 'click', this.yelp );
+                if( controlElement.useFlyout ) { 
+                    controlElement.html.setAttribute( 'data-flyout-trigger', controlElement.flyoutConfig.triggerEvent ); 
+                    controlElement.html.setAttribute( 'data-flyout-target', controlElement.flyoutConfig.target );  
+                }
+
+                controlElement.html.innerText = controlElement.displayName; 
+                
+                liveControls[ control ] = controlElement;
 
             }
 
@@ -113,15 +137,37 @@ export const HudController = (function() {
 
         toggleHudMode : function() { 
             
-            const activeState = ( document.querySelector('body').dataset.componentHudActive === undefined ) ? false : document.querySelector('body').dataset.componentHudActive; 
-            document.querySelector('body').setAttribute( 'data-component-hud-active', !activeState ); 
+            const currState = document.querySelector('body').dataset.componentHudActive; 
 
+            if( currState === "true" ) {
+                document.querySelector('body').setAttribute( 'data-component-hud-active', "false" ); 
+            } else { 
+                document.querySelector('body').setAttribute( 'data-component-hud-active', "true" ); 
+            }
+
+        },
+
+        displayControls : function( hudControlElem ) { 
+
+            const flyoutId = hudControlElem.dataset.flyoutTarget; 
+
+            switch( flyoutId ) {
+                case 'copyCodeControls' : 
+                    HudController.setActiveMarkup( hudControlElem.dataset.hudkey );
+                    break; 
+            }
+            
+            Flyouts.getFlyout( flyoutId ).toggle();  
+            
         } 
 
     }
 
     return {
-        dispatch : dispatch
+        dispatch : dispatch, 
+        init : Constructor, 
+        getMarkup : (function() { console.log(this); return this.markup }),
+        setActiveMarkup : (function( id) { this.setMarkup({ data : this.markup.data, activeMarkup : id }) })
     }
     
 })();

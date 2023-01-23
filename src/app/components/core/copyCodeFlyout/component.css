@@ -1,0 +1,17 @@
+.flyout-container form textarea { 
+    width: 100%; 
+    min-height: 210px;
+    padding: 10px 20px; 
+    border-radius: 10px;  
+    background-color: rgba( 44, 44, 44, 0.8 ); 
+    border: 1px white solid; 
+    color: white;
+} 
+
+.flyout-container button.close { 
+    padding: 10px !important; 
+} 
+
+.flyout-container { 
+    background-color: rgba( 44, 44, 44, 0.8 ) !important; 
+}

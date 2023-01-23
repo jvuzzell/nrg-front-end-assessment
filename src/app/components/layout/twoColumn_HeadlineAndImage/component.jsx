@@ -4,8 +4,7 @@ import Image from '../../core/image/component';
 import ContentContext from '../../../context/contentContext';
 import { useContext } from "react";
 
-const TwoColumn_headlineAndImage = (props) => {    
-    
+const TwoColumn_HeadlineAndImage = (props) => {    
     const { content } = useContext( ContentContext ); 
     
     let imageColumnClassList = "v-col md-3 lg-4 left ";
@@ -15,7 +14,7 @@ const TwoColumn_headlineAndImage = (props) => {
     const imageContent = content[ props.parentComponent ][ 'twoColumn_TextareaAndImage' ][ 'image' ]; 
 
     return (
-        <div className="twoColumnHeadlineImage h-row clearfix" data-hud="layout/twoColumn_headlineAndImage">
+        <div className="twoColumnHeadlineImage h-row clearfix" data-hud="layout/twoColumn_HeadlineAndImage">
             <div className={imageColumnClassList}>
                 <Image content={ imageContent }/>
             </div>
@@ -26,4 +25,4 @@ const TwoColumn_headlineAndImage = (props) => {
     );  
 }
 
-export default TwoColumn_headlineAndImage;
+export default TwoColumn_HeadlineAndImage;

@@ -20,7 +20,7 @@
                 "classList" : "vertical-align"
             }, 
             "image" : { 
-                "src" : "/public/images/man-on-cpu-potatoa.png"
+                "src" : "public/images/man-on-cpu-potatoa.png"
             }, 
             "imageOrientation" : "float-right"
         }
@@ -48,7 +48,7 @@
                 "classList" : "vertical-align"
             }, 
             "image" : { 
-                "src" : "/public/images/woman-at-cpu.png"
+                "src" : "public/images/woman-at-cpu.png"
             }, 
             "imageOrientation" : ""
         }
@@ -57,7 +57,7 @@
         "threeColumn_Cards" : {
             "cards" : [
                 {
-                    "iconSrc" : "/public/images/plug-circle-bolt.svg", 
+                    "iconSrc" : "public/images/plug-circle-bolt.svg", 
                     "name" : "Direct Energy $1000-Surge Protect",
                     "benefits" : [
                         "No service call fee, no long term contract, no pre-inspection required", 
@@ -71,7 +71,7 @@
                     }
                 }, 
                 {
-                    "iconSrc" : "/public/images/plug-circle-bolt.svg", 
+                    "iconSrc" : "public/images/plug-circle-bolt.svg", 
                     "name" : "Direct Energy $2000-Surge Protect",
                     "benefits" : [
                         "No service call fee, no long term contract, no pre-inspection required", 

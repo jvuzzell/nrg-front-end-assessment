@@ -1,11 +1,11 @@
 import './component.css'; 
-import TwoColumn_TextareaAndImage from '../../layout/twoColumn_TextareaAndImage/component';
+import TwoColumn_HeadlineAndImage from '../../layout/twoColumn_HeadlineAndImage/component';
 
 const Hero = () => {
     return ( 
-        <section className="background-color_cloud curved-border" data-hud="template/hero">
+        <section className="background-color_cloud curved-border" data-hud="templates/hero">
             <div className="content-lock">
-                <TwoColumn_TextareaAndImage parentComponent="hero" data-hud="layout-twoColumn_TextareaAndImage"/>
+                <TwoColumn_HeadlineAndImage parentComponent="hero" data-hud="layout/twoColumn_HeadlineAndImage"/>
             </div>
         </section>
     );  

@@ -5,13 +5,18 @@ import '../main.js';
 // Static Assets
 import '../assets/icons/fontawesome-6.2.0/light/plug-circle-bolt.svg';
 import '../assets/icons/graphic/woman-at-cpu.png';
-import '../assets/images/man-on-cpu-potatoa.png'; 
+import '../assets/images/man-on-cpu-potatoa.png';  
+import '../assets/icons/fontawesome-6.2.0/solid/toggle-on.svg';
+import '../assets/icons/fontawesome-6.2.0/solid/toggle-off.svg';
+import '../assets/favicon/favicon.ico';
 
 // Models
 import Content from '../data/content_index-html.json';
+import Markup from '../data/component_markup.json';
 
 // Context
 import ContentContext from "../context/contentContext.js";
+import MarkupContext from "../context/markupContext.js"; 
 
 // View Components
 import ComponentHud from '../components/functional/componentEditor/hud/component';
@@ -26,21 +31,26 @@ const container = document.getElementById("root");
 const root = createRoot(container);
  
 const App = () => {
-    const [content, setContent] = useState( Content ); 
-    const value = { content, setContent };
+    const [content, setContent] = useState( Content );  
+    const [markup, setMarkup] = useState({ data: Markup, activeMarkup: "core/textarea" });
+
+    const contentContext = { content, setContent };
+    const markupContext = { markup, setMarkup }; 
 
     return (
-        <ContentContext.Provider value={value}>
+        <ContentContext.Provider value={contentContext}>
             <div className="main-content">
                 <Hero />    
                 <About />
                 <Process /> 
                 <Pricing /> 
             </div>   
-            <ComponentHud />  
-            <FlyoutContainers>  
-                <CopyCodeFlyout />
-            </FlyoutContainers>
+            <MarkupContext.Provider value={markupContext}>
+                <ComponentHud />  
+                <FlyoutContainers>   
+                    <CopyCodeFlyout />
+                </FlyoutContainers>
+            </MarkupContext.Provider>
         </ContentContext.Provider>
     );
 };

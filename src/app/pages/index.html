@@ -7,8 +7,24 @@
     <title>NRG Assessment</title>
     <link rel="shortcut icon" href="<%=require('../../../src/app/assets/favicon/favicon.ico')%>" type="image/x-icon"> 
 </head>
-<body> 
-    <div class="background-color_deep-sea text-center"><a href="/demo/nrg-assessment/style-guide/" class="underline color_white has-pd-top-5 has-pd-bottom-5" style="display:inline-block">Style Guide Available!</a></div>
+<body data-component-hud-active="true"> 
+    <div class="background-color_deep-sea text-center"><a href="/demo/nrg-assessment/style-guide/" class="underline color_white has-pd-top-5 has-pd-bottom-5" style="display:inline-block">Style Guide Available!</a></div> 
+    <div class="screen-overlay"></div> 
+    
+        <div class="content-lock">
+            <div class="h-row">
+                <div class="v-col text-right has-mg-bottom-0">
+                    <button id="hudToggle" class="icon-left button btn-no-background">
+                        <img style="margin-right: 10px; " class="icon" data-hud-on src="<%=require('../../../src/app/assets/icons/fontawesome-6.2.0/solid/toggle-on.svg')%>">
+                        <img style="margin-right: 10px; " class="icon" data-hud-off src="<%=require('../../../src/app/assets/icons/fontawesome-6.2.0/solid/toggle-off.svg')%>">
+                        Toggle Hud
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
     <div id="root"></div>
 </body>
 </html>
