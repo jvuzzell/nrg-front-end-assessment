@@ -1,4 +1,4 @@
-import { createContext, React } from "react";
+import { createContext, React, useState } from "react";
 import { createRoot } from "react-dom/client";
 import '../main.js';
 
@@ -9,6 +9,9 @@ import '../assets/images/man-on-cpu-potatoa.png';
 
 // Models
 import Content from '../data/content_index-html.json';
+
+// Context
+import ContentContext from "../context/contentContext.js";
 
 // View Components
 import ComponentHud from '../components/functional/componentEditor/hud/component';
@@ -21,20 +24,25 @@ import CopyCodeFlyout from "../components/core/copyCodeFlyout/component.jsx";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
-export const ContentContext = createContext( Content );
+ 
+const App = () => {
+    const [content, setContent] = useState( Content ); 
+    const value = { content, setContent };
 
-root.render(
-    <ContentContext.Provider value={Content}>
-        <div className="main-content">
-            <Hero />    
-            <About />
-            <Process /> 
-            <Pricing /> 
-        </div>   
-        <ComponentHud />  
-        <FlyoutContainers>  
-            <CopyCodeFlyout />
-        </FlyoutContainers>
+    return (
+        <ContentContext.Provider value={value}>
+            <div className="main-content">
+                <Hero />    
+                <About />
+                <Process /> 
+                <Pricing /> 
+            </div>   
+            <ComponentHud />  
+            <FlyoutContainers>  
+                <CopyCodeFlyout />
+            </FlyoutContainers>
+        </ContentContext.Provider>
+    );
+};
 
-    </ContentContext.Provider>
-);
+root.render( <App /> );

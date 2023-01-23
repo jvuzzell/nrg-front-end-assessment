@@ -1,6 +1,6 @@
 import './component.css';
 import PriceTierCard from '../../core/priceTierCard/component';
-import { ContentContext } from "../../../pages/index.js";
+import ContentContext from '../../../context/contentContext';
 import { useContext } from "react";
 
 const registeredCards = { 
@@ -8,8 +8,8 @@ const registeredCards = {
 }
 
 const ThreeColumn_Cards = (props) => {  
-    const ctx = useContext( ContentContext ); 
-    const cardContent = ctx[ props.parentComponent ][ 'threeColumn_Cards' ][ 'cards' ];
+    const { content } = useContext( ContentContext ); 
+    const cardContent = content[ props.parentComponent ][ 'threeColumn_Cards' ][ 'cards' ];
                 
     let cards = [];
     const CardType = registeredCards[ props.cardType ]; 
